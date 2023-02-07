@@ -33,7 +33,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo "I'm in directory $(pwd)"
+        run: |
+          echo "I'm in directory $(pwd)"
+          echo "Course ID: $COURSE_ID"
+          echo "Documentation URL: $DOCUMENTATION_URL"
 
       # Runs a set of commands using the runners shell
       - name: Run nodejs
