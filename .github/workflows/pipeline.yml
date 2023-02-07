@@ -19,6 +19,9 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      COURSE_ID: "devops-ci-cd"
+      DOCUMENTATION_URL: ${{ secrets.DOCUMENTATION_URL }}
     defaults:
       run:
         working-directory: scripts
