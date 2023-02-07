@@ -26,6 +26,7 @@ jobs:
     env:
       COURSE_ID: "devops-ci-cd"
       DOCUMENTATION_URL: ${{ secrets.DOCUMENTATION_URL }}
+      GITHUB_USERNAME: ${{ github.event.inputs.GITHUB_USERNAME }}
     defaults:
       run:
         working-directory: scripts
